@@ -1,0 +1,225 @@
+{
+  "track": "nlp",
+  "model": "DeepPavlov/rubert-base-cased",
+  "revision": "4036cab694767a299f2b9e6492909664d9414229",
+  "dataset": "redmadrobot-rnd/pii_train",
+  "classes": [
+    "BIRTH_CERTIFICATE",
+    "CITY",
+    "COUNTRY",
+    "CREDIT_CARD",
+    "DISTRICT",
+    "DRIVER_LICENSE",
+    "EMAIL",
+    "FIRST_NAME",
+    "HOUSE",
+    "INN",
+    "IP_ADDRESS",
+    "LAST_NAME",
+    "MIDDLE_NAME",
+    "MILITARY_ID",
+    "OMS",
+    "PASSPORT",
+    "PHONE",
+    "REGION",
+    "SNILS",
+    "STREET",
+    "URL"
+  ],
+  "n_train": 15423,
+  "n_val": 1714,
+  "n_test": 2841,
+  "params_total": 177295915,
+  "baseline": {
+    "majority": {
+      "f1_micro": 0.4307182320441989,
+      "f1_macro": 0.43214312922455783,
+      "precision": 0.39905814905814907,
+      "recall": 0.46783485357657223
+    },
+    "random_head": {
+      "f1_micro": 0.0028945004491466213,
+      "f1_macro": 0.004014503762395103,
+      "precision": 0.0016151489835700362,
+      "recall": 0.013922227556409025
+    }
+  },
+  "final": {
+    "f1_micro": 0.8605229318474067,
+    "f1_macro": 0.8618964318606599,
+    "precision": 0.8294496777392166,
+    "recall": 0.8940149625935162,
+    "token_f1": 0.8783748813939447,
+    "per_type": {
+      "BIRTH_CERTIFICATE": {
+        "precision": 0.9040697674418605,
+        "recall": 0.9120234604105572,
+        "f1-score": 0.908029197080292,
+        "support": 341
+      },
+      "CITY": {
+        "precision": 0.7994428969359332,
+        "recall": 0.8466076696165191,
+        "f1-score": 0.822349570200573,
+        "support": 339
+      },
+      "COUNTRY": {
+        "precision": 0.7183098591549296,
+        "recall": 0.8429752066115702,
+        "f1-score": 0.7756653992395437,
+        "support": 242
+      },
+      "CREDIT_CARD": {
+        "precision": 0.880184331797235,
+        "recall": 0.9408866995073891,
+        "f1-score": 0.9095238095238094,
+        "support": 203
+      },
+      "DISTRICT": {
+        "precision": 0.7903225806451613,
+        "recall": 0.9130434782608695,
+        "f1-score": 0.8472622478386167,
+        "support": 161
+      },
+      "DRIVER_LICENSE": {
+        "precision": 0.9390581717451524,
+        "recall": 0.9137466307277629,
+        "f1-score": 0.9262295081967213,
+        "support": 371
+      },
+      "EMAIL": {
+        "precision": 0.68359375,
+        "recall": 0.7918552036199095,
+        "f1-score": 0.7337526205450734,
+        "support": 221
+      },
+      "FIRST_NAME": {
+        "precision": 0.884990253411306,
+        "recall": 0.9098196392785571,
+        "f1-score": 0.8972332015810276,
+        "support": 499
+      },
+      "HOUSE": {
+        "precision": 0.84,
+        "recall": 0.901840490797546,
+        "f1-score": 0.8698224852071006,
+        "support": 163
+      },
+      "INN": {
+        "precision": 0.9721115537848606,
+        "recall": 0.9277566539923955,
+        "f1-score": 0.9494163424124515,
+        "support": 263
+      },
+      "IP_ADDRESS": {
+        "precision": 0.9793103448275862,
+        "recall": 0.9161290322580645,
+        "f1-score": 0.9466666666666667,
+        "support": 155
+      },
+      "LAST_NAME": {
+        "precision": 0.9313725490196079,
+        "recall": 0.8315098468271335,
+        "f1-score": 0.8786127167630057,
+        "support": 457
+      },
+      "MIDDLE_NAME": {
+        "precision": 0.9523809523809523,
+        "recall": 0.974025974025974,
+        "f1-score": 0.9630818619582664,
+        "support": 308
+      },
+      "MILITARY_ID": {
+        "precision": 0.9305555555555556,
+        "recall": 0.9640287769784173,
+        "f1-score": 0.9469964664310955,
+        "support": 278
+      },
+      "OMS": {
+        "precision": 0.9069767441860465,
+        "recall": 0.9176470588235294,
+        "f1-score": 0.9122807017543859,
+        "support": 170
+      },
+      "PASSPORT": {
+        "precision": 0.8674463937621832,
+        "recall": 0.9008097165991903,
+        "f1-score": 0.8838133068520357,
+        "support": 494
+      },
+      "PHONE": {
+        "precision": 0.7149532710280374,
+        "recall": 0.884393063583815,
+        "f1-score": 0.7906976744186046,
+        "support": 173
+      },
+      "REGION": {
+        "precision": 0.8791208791208791,
+        "recall": 0.9090909090909091,
+        "f1-score": 0.8938547486033518,
+        "support": 176
+      },
+      "SNILS": {
+        "precision": 0.9064039408866995,
+        "recall": 0.8251121076233184,
+        "f1-score": 0.863849765258216,
+        "support": 223
+      },
+      "STREET": {
+        "precision": 0.8153846153846154,
+        "recall": 0.9298245614035088,
+        "f1-score": 0.8688524590163934,
+        "support": 171
+      },
+      "URL": {
+        "precision": 0.3680851063829787,
+        "recall": 0.8398058252427184,
+        "f1-score": 0.5118343195266272,
+        "support": 206
+      }
+    }
+  },
+  "ablation": {
+    "setting": "freeze",
+    "full": {
+      "f1_micro": 0.9639757460468433,
+      "f1_macro": 0.9649263034475387,
+      "precision": 0.9550058892815076,
+      "recall": 0.9731156985117618,
+      "token_f1": 0.9781249999999999,
+      "lr": 5e-05,
+      "train_seconds": 404.73201601,
+      "trainable_params": 177295915
+    },
+    "freeze": {
+      "f1_micro": 0.38697485099578427,
+      "f1_macro": 0.3045333845923175,
+      "precision": 0.4906008109104313,
+      "recall": 0.3194911185789726,
+      "token_f1": 0.637010159651669,
+      "lr": 5e-05,
+      "train_seconds": 152.83115114600002,
+      "trainable_params": 33067
+    },
+    "freeze_lr_1e-3": {
+      "f1_micro": 0.7963779893197122,
+      "f1_macro": 0.7806626091784784,
+      "precision": 0.7711330935251799,
+      "recall": 0.8233317330772923,
+      "token_f1": 0.8954754556571362,
+      "lr": 0.001,
+      "train_seconds": 152.4099359700001,
+      "trainable_params": 33067
+    }
+  },
+  "errors": {
+    "correct": 4054,
+    "boundary": 33,
+    "type": 54,
+    "missed": 25,
+    "spurious": 97
+  },
+  "device": "Tesla T4",
+  "train_time_sec": 404.73201601,
+  "fast_mode": false
+}
